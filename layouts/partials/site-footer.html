@@ -2,6 +2,8 @@
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
     &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+      {{ .Site.Params.description }}
+      <img src="/images/logo.svg" alt="tes" height="40px">
   </a>
     <div>{{ partial "social-follow.html" . }}</div>
   </div>
